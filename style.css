@@ -1,0 +1,103 @@
+html
+{
+  height: 100%;
+}
+
+body
+{
+    height:98%;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+.main
+{
+    display:flex;
+    height:100%;
+    padding-right:2%;
+}
+
+.liseret
+{
+    background: url("../img/liseret.png");
+    width:10%;
+    border-radius: 5%;
+    margin-right: 5%;
+    height:100%;
+    border: 1px solid black;
+    box-shadow: 3px 3px 0px black;
+}
+
+.main_wrapper
+{
+    flex:1;
+}
+
+header
+{
+    clear:both;
+    display: flex;
+    justify-content: space-between;
+}
+
+.element:nth-child(1)
+{
+    flex:1;
+}
+
+.element h1, .element p
+{
+    text-align:center;
+}
+
+h2
+{
+    color: #c43040;
+}
+
+img
+{
+    border: 1px solid black;
+    box-shadow: 3px 3px 0px black;
+}
+
+.entete
+{
+    
+}
+
+.row 
+{
+    display:flex;
+    justify-content: space-around;
+}
+
+.row section
+{
+    width: 27%;
+    text-align: justify;
+    line-height: 1.4em;
+}
+
+li 
+{
+    margin-top: 3%;
+    padding-right: 7%;
+}
+/** CSS pour les écrans de moins de 1024px **/
+@media all and (max-width: 1024px)
+{
+    .liseret
+    {
+        display:none;
+    }
+
+    .row
+    {
+        flex-direction: column;
+    }
+
+    .row section
+    {
+        width: auto;
+    }
+}
